@@ -64,3 +64,11 @@ function createCartTracker() {
 //Test Case
 let cart = createCartTracker()
 console.log(cart(20))
+
+//Task 8
+function calculateSavings(years, amount) {
+    if (years === 10) return amount 
+    else if (years < 10) return calculateSavings(years + 1, amount * 1.05)
+}
+//Test Case
+console.log(`Projected Savings: $${calculateSavings(8, 1000)}`)
