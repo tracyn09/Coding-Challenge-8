@@ -13,3 +13,14 @@ function calculateDiscount(price, discountRate) {
 }
 //Test Case
 calculateDiscount(100, 0.2)
+
+//Task 3
+const calculateServiceFee = (amount, serviceType) => {
+    let fee = 0
+    if (serviceType === "Premium") fee = amount * 0.15;
+    else if (serviceType === "Standard") fee = amount * 0.10;
+    else if (serviceType === "Basic") fee = amount * 0.05
+    console.log(`Service Fee: $${fee}`)
+}
+//Test Data
+calculateServiceFee(200, "Premium")
