@@ -53,3 +53,14 @@ function filterLargeTransactions(transactions, filterFunction) {
 }
 console.log(filterLargeTransactions(transactions, amount => amount > 1000))
 
+//Task 7
+function createCartTracker() {
+    let total = 0 
+    return function(itemValue) {
+        total += itemValue
+        return `Total Cart Value: $${total}`
+    }
+}
+//Test Case
+let cart = createCartTracker()
+console.log(cart(20))
