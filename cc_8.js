@@ -45,3 +45,11 @@ function calculateLoanPayment(principal, rate, time) {
 }
 //Test Case
 calculateLoanPayment(1000, 0.05, 2)
+
+//Task 6
+let transactions = [200, 1500, 3200, 800, 2500]
+function filterLargeTransactions(transactions, filterFunction) {
+    return transactions.filter(filterFunction)
+}
+console.log(filterLargeTransactions(transactions, amount => amount > 1000))
+
