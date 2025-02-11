@@ -24,3 +24,16 @@ const calculateServiceFee = (amount, serviceType) => {
 }
 //Test Data
 calculateServiceFee(200, "Premium")
+
+//Task 4
+function calculateRentalCost(days, carType, insurance = false) {
+    let costs = 0 
+    if (carType === "Economy") costs = 40 * days
+    else if (carType === "Standard") costs = 60 * days
+    else if (carType === "Luxury") costs = 100 * days
+    
+    if (insurance) costs += (20 * days)
+    console.log(`Total Rental Cost: $${costs}`)
+}
+//Test Case
+calculateRentalCost(3, "Economy", true)
