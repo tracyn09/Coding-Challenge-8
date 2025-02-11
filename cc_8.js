@@ -37,3 +37,11 @@ function calculateRentalCost(days, carType, insurance = false) {
 }
 //Test Case
 calculateRentalCost(3, "Economy", true)
+
+//Task 5
+function calculateLoanPayment(principal, rate, time) {
+    let totalPayment = principal + (principal * rate * time)
+    console.log(`Total Payment: $${totalPayment}`)
+}
+//Test Case
+calculateLoanPayment(1000, 0.05, 2)
